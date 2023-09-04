@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Techskills IT Solution</title>
+<title>RegisterFrom</title>
 <style>
 body {
 	font-family: Arial, sans-serif;
@@ -106,7 +106,7 @@ th, td {
 	<div class="container">
 		<div class="header">
 			<div class="company-info">
-				<h2 align="center">Techskills IT Solution</h2>
+				<h2 align="center">Registeration Form</h2>
 				<p align="center">
 					A-101, First Floor, Above A-20, Sakinaka Industrial Market,<br>
 					Beside Holiday Inn Hotel Ghatkopar-Andheri Link Road,<br>
@@ -122,9 +122,13 @@ th, td {
 					<canvas id="photo-canvas" style="display: none;"></canvas>
 					<img id="photo-preview" alt="Profile Photo"> <input
 						type="hidden" id="photo-canvas" name="photoData">
+				
 
 				</div>
+<div>
+ <h1><input type="file" name="photo" size="50"/></h1>
 
+</div>
 				<div>
 
 					<input type="button" value="Take Photo" id="camera-button">
@@ -135,7 +139,7 @@ th, td {
 
 		</div>
 
-		<form action="register" method="post">
+		<form action="register" method="post" enctype="multipart/form-data">
 
 			<table>
 				<tr>
@@ -194,51 +198,8 @@ th, td {
 					<th><label for="contact">Contact No:</label></th>
 					<td><input type="tel" id="contact" name="contact" required></td>
 				</tr>
-
-				<tr>
-					<th>Academic Qualification</th>
-					<td><input type="radio" name="qualification" value="graduate" />
-						Graduate</td>
-					<td><input type="radio" name="qualification"
-						value="undergraduate" /> Undergraduate</td>
-					<td><input type="radio" name="qualification" value="backlog" />
-						Graduate With Backlog</td>
-				</tr>
-				<tr>
-					<th>Qualification Detail</th>
-					<th>Name of School/College</th>
-					<th>Percentage</th>
-					<th>Year of Passing</th>
-				</tr>
-				<tr class="undergraduate post-graduate graduate qualification">
-					<th>SSC:</th>
-					<td><input type="text" name="SSC" required></td>
-					<td><input type="text" name="SSC_Percentage"></td>
-					<td><input type="text" name="SSC_Year"></td>
-				</tr>
-				<tr class="undergraduate post-graduate graduate qualification">
-					<th>HSC:</th>
-					<td><input type="text" name="HSC" required></td>
-					<td><input type="text" name="HSC_Percentage"></td>
-					<td><input type="text" name="HSC_Year"></td>
-				</tr>
-				<tr class="graduate post-graduate qualification">
-					<th>Graduate:</th>
-					<td><input type="text" name="Graduate" required></td>
-					<td><input type="text" name="Graduate_Percentage"></td>
-					<td><input type="text" name="Graduate_Year"></td>
-				</tr>
-				<tr class="undergraduate graduate post-graduate qualification">
-					<th>Post Graduate:</th>
-					<td><input type="text" name="Post_Graduate" required></td>
-					<td><input type="text" name="Post_Graduate_Percentage"></td>
-					<td><input type="text" name="Post_Graduate_Year"></td>
-				</tr>
-				<tr>
-					<th align="right">Signature</th>
-					<td><input type="text" name="sign"></td>
-
-				</tr>
+				
+				
 				<tr>
 					<td colspan="2" style="text-align: center;"><input
 						type="submit" value="Register"></td>
@@ -246,7 +207,7 @@ th, td {
 			</table>
 		</form>
 	</div>
-	<script>
+	<!-- <script>
     const cameraButton = document.getElementById('camera-button');
     const photoCanvas = document.getElementById('photo-canvas');
     const photoPreview = document.getElementById('photo-preview');
@@ -331,6 +292,6 @@ qualification.forEach(row =>{
       }
     });
   </script>
-
+ -->
 </body>
 </html>
